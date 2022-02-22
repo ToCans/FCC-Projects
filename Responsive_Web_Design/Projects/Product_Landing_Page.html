@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<style>
+    #header-img {
+        display: flex;
+        width: 100%;
+        max-height: 400px;
+        grid-area: image
+    }
+
+    #header {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "bar"
+            "title"
+            "image";
+    }
+
+    #Top-Title {
+        grid-area: title;
+        justify-self: center;
+        color: red;
+    }
+
+    #nav-bar {
+        grid-area: bar;
+        position: fixed;
+        background-color: cornsilk;
+        width: auto;
+        border-color: black;
+        border-radius: 20px;
+    }
+
+    @media (max-height: 400px) {
+        #header-img {
+            width: 200px;
+            height: 200px;
+        }
+
+        #video {
+            width: auto;
+            height: 200px;
+        }
+    }
+</style>
+
+<head>
+    <title>Thomas the Dank Engine</title>
+    <header id="header">
+        <h1 id="Top-Title"> Pull up with that stick </h1>
+        <img id="header-img"
+            src="https://2.bp.blogspot.com/_K9TR7GZjKTg/TSKuk_D9fdI/AAAAAAAABGk/B6ENmHS1Vcs/s1600/7262585_b2097d84a5.jpg"
+            alt="Thomas the Dank Engine">
+        <nav id="nav-bar">
+            <a href="#toby" class="nav-link">Toby</a> -
+            <a href="#percy" class="nav-link">Percy</a> -
+            <a href="#gordon" class="nav-link">Gordon</a> -
+            <a href="#video" class="nav-link">Compilation</a>
+        </nav>
+    </header>
+</head>
+
+
+<body id="body">
+    <h2> Thomas' homies</h2>
+    <div id="toby">
+        <h4>Toby</h4>
+        <p>
+            Toby is a brown square tram engine who works on Thomas' Branch Line with his coach Henrietta. Toby is wise
+            and always willing to share his experience and knowledge with the other engines. He is careful with every
+            job he undertakes, causing him to rarely have any accidents.
+        </p>
+        <p>
+            It's noted that Toby's favorite song is: Taste
+        </p>
+    </div>
+    <div id="percy">
+        <h4>Percy</h4>
+        <p>
+            Percy is a little green saddle tank engine who was brought to Sodor to help run the railway during Gordon,
+            Henry and James' strike. He is Thomas' best friend and is quite cheeky, often getting himself into trouble
+            with his attempts to play tricks on the other engines. Percy's favourite job is to deliver the mail and he
+            works on Thomas' Branch Line as a goods engine.
+        </p>
+        <p>
+            It's noted that Percy's favorite song is: Bad and Bougie
+        </p>
+    </div>
+    <div id="gordon">
+        <h4>Gordon</h4>
+        <p>
+            Gordon is a big blue tender engine who works on the Main Line. He is Flying Scotsman's only surviving
+            brother. Gordon is also one of the fastest and strongest engines on the Island of Sodor, whose main task is
+            to pull the Wild Nor' Wester, the railway's express train. At times, this leads him to feel superior and
+            cause him to become boastful.
+        </p>
+        <p>
+            It's noted that Gordon's favorite song is: Plain Jane
+        </p>
+    </div>
+    <div>
+        <h4>Best of Thomas the Dank Engine</h4>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/hSVFRyEYSLw"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <div>
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="get">
+            <p> Please leave your email if you would like to receive Thomas the Tank Engine More Content.</p>
+            <input type="email" id="email" placeholder="Please enter your email here." name="email">
+            <input type="submit" id="submit">
+        </form>
+    </div>
+
+</body>
+
+</html>
