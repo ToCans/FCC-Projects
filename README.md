@@ -13,12 +13,9 @@
 
 ## Projects and Coursework
 
-#### In Progress:
-
--   [Front End Development Libraries](/Frontend_Development_Libraries)
-
 #### Completed Classes:
 
 -   [Scientific Computing with Python](/PythonForEveryone)
 -   [Responsive Web Design](/Responsive_Web_Design)
 -   [Javascript Algorithms and Data Structures](/JS_Algorithm_and_DataStructs)
+-   [Front End Development Libraries](/Frontend_Development_Libraries)
